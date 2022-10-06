@@ -9,6 +9,7 @@ body{
   flex-direction: column;
   justify-content: center;
   padding: 1rem;
+  user-select: none;   
 }
 
 .grid {
@@ -31,6 +32,8 @@ body{
   cursor: pointer;
 	perspective: 1000px;
   margin: 5px;
+  user-select: none;   
+
 }
 	.flip-container, .flip-container.flipped .flipper {
     transform: rotateY(-180deg);	
@@ -39,12 +42,15 @@ body{
 .flip-container, .front, .back {
 	width: 168px;
 	height: 235px;
+  user-select: none;   
+
 }
 
 .flipper {
 	transition: 0.6s;
 	transform-style: preserve-3d;
 	position: relative;
+  user-select: none;   
 }
 
 .front, .back {
@@ -56,6 +62,8 @@ body{
 	position: absolute;
 	top: 0;
 	left: 0;
+  user-select: none;   
+
 }
 
 .front {
