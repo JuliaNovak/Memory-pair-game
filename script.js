@@ -133,9 +133,7 @@ function popWinWindow() {
    let result = alert("You won!");
    console.log(result);
    startNewGame();
-   setTimeout(() => {
-      window.location.reload();
-   }, 200);
+   window.location.reload();
 }
 
 flipContainer.forEach((card) => card.addEventListener("click", flipCard));
